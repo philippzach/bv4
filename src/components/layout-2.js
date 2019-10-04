@@ -11,25 +11,24 @@ const Heading = styled.h1`
   z-index: 100;
   font-family: futura;
   font-weight: bold;
-  color: #25457f;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px;
   line-height: 1.25em;
   max-width: 80%;
-  left: 150px;
-  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 250px;
 `
 const Footer = styled.footer`
   background-color: #f6f7f9;
   color: #25457f;
 `
 
-const Layout = ({ children, data }) => {
+const Layout = ({ children, data, heading }) => {
   return (
     <>
       <Header />
-      <Heading>
-        The leading independent experts in Startup Scouting, Assessment and
-        Valuation
-      </Heading>
+      <Heading>{heading}</Heading>
       <Img
         fluid={data.childImageSharp.fluid}
         alt="bv4 header image"
