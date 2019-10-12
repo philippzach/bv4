@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Template from "../../components/sub-page-template"
 import Icon1 from "../../images/scouting1.svg"
 import Icon2 from "../../images/scouting2.svg"

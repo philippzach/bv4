@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `BV4 - Certified Valuation Experts`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `The leading independent experts in Startup Scouting, Assessment and
+    Valuation`,
     author: `@philipp.zach`,
   },
   plugins: [
