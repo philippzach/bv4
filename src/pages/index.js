@@ -2,6 +2,16 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Container from "../components/container"
+import Logo1 from "../images/logo1.svg"
+import Logo2 from "../images/logo2.svg"
+import Logo3 from "../images/logo3.svg"
+import Logo4 from "../images/logo4.svg"
+import Logo5 from "../images/logo5.svg"
+import Logo6 from "../images/logo6.svg"
+import Logo7 from "../images/logo7.svg"
+import Logo8 from "../images/logo8.svg"
+import Logo9 from "../images/logo9.svg"
+import Logo10 from "../images/logo10.svg"
 
 import Investor from "../images/lp-investor.svg"
 import Startup from "../images/pl-startup.svg"
@@ -16,10 +26,26 @@ const BlueBackground = styled.div`
 `
 const LogoContainer = styled.div`
   background-color: white;
-  height: 90px;
+
   box-shadow: rgba(0, 0, 0, 0.14) 4px 5px 9px;
   margin-top: -2.5em;
   margin-bottom: 5em;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    margin-bottom: 0;
+    padding: 1em;
+    @media (max-width: 650px) {
+      padding: 0.5em;
+    }
+  }
 `
 
 const Card = styled.div`
@@ -32,6 +58,9 @@ const Card = styled.div`
   grid-template-rows: 2fr 4fr 1fr;
   z-index: 1000;
   margin-top: -5em;
+  @media (max-width: 850px) {
+    margin-top: 3em;
+  }
   h2 {
     margin-bottom: 0;
     font-family: futura;
@@ -63,6 +92,10 @@ const CardLayout = styled.div`
   grid-gap: 3em;
   justify-content: center;
   padding: 0 0 6em 0;
+  @media (max-width: 850px) {
+    grid-template-columns: 350px;
+    grid-template-rows: 1fr 1fr;
+  }
 `
 
 const IndexPage = ({ data }) => (
@@ -177,7 +210,38 @@ const IndexPage = ({ data }) => (
       </Container>
     </BlueBackground>
     <Container>
-      <LogoContainer></LogoContainer>
+      <LogoContainer>
+        <div>
+          <img src={Logo1} alt="" />
+        </div>
+        <div>
+          <img src={Logo2} alt="" />
+        </div>
+        <div>
+          <img src={Logo3} alt="" />
+        </div>
+        <div>
+          <img src={Logo4} alt="" />
+        </div>
+        <div>
+          <img src={Logo5} alt="" />
+        </div>
+        <div>
+          <img src={Logo6} alt="" />
+        </div>
+        <div>
+          <img src={Logo7} alt="" />
+        </div>
+        <div>
+          <img src={Logo8} alt="" />
+        </div>
+        <div>
+          <img src={Logo9} alt="" />
+        </div>
+        <div>
+          <img src={Logo10} alt="" />
+        </div>
+      </LogoContainer>
       <Cta
         text="Learn more abut our unique approach and what we offer"
         buttonText="Contact us"

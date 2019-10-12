@@ -2,22 +2,42 @@ import React from "react"
 
 import Img from "gatsby-image"
 import styled from "@emotion/styled"
+import Footer from "../components/footer"
 
 import Header from "./header"
 import "./layout.css"
 
 const Heading = styled.h1`
   position: absolute;
-  z-index: 100;
+  z-index: 10;
   font-family: futura;
   font-weight: bold;
   color: #25457f;
   line-height: 1.25em;
   max-width: 80%;
-  left: 150px;
-  top: 300px;
+  left: 120px;
+  top: 150px;
+  @media (max-width: 600px) {
+    left: 50px;
+    top: 100px;
+  }
+  @media (min-width: 601px) and (max-width: 850px) {
+    left: 100px;
+  }
+  @media (min-width: 1050px) and (max-width: 1249px) {
+    top: 220px;
+  }
+  @media (min-width: 1250px) and (max-width: 1499px) {
+    top: 250px;
+  }
+  @media (min-width: 1500px) {
+    max-width: 800px;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `
-const Footer = styled.footer`
+const FooterBg = styled.footer`
   background-color: #f6f7f9;
   color: #25457f;
 `
@@ -31,6 +51,7 @@ const Layout = ({ children, data }) => {
         Valuation
       </Heading>
       <Img
+        className="headerpic"
         fluid={data.childImageSharp.fluid}
         alt="bv4 header image"
         style={{ zIndex: "-1" }}
@@ -38,7 +59,7 @@ const Layout = ({ children, data }) => {
 
       <main>{children}</main>
 
-      <Footer>
+      <FooterBg>
         <div
           style={{
             margin: `0 auto`,
@@ -47,10 +68,9 @@ const Layout = ({ children, data }) => {
             paddingTop: 0,
           }}
         >
-          © {new Date().getFullYear()},{` `}
-          <a href="https://www.gatsbyjs.org">BV4</a>
+          <Footer />
         </div>
-      </Footer>
+      </FooterBg>
     </>
   )
 }

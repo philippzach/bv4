@@ -25,6 +25,10 @@ const Grid = styled.section`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 4em;
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 `
 
 const Card = styled.div`
@@ -57,6 +61,10 @@ const TeamGrid = styled.section`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 6em;
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 `
 const SingleTeam = styled.div`
   text-align: center;

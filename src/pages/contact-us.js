@@ -54,47 +54,55 @@ const Contact = ({ data }) => (
       <Buttons>
         <Button text="Call now" link="+41 44 200 90 66" />
       </Buttons>
-      <svg
-        width="578px"
-        height="4px"
-        viewBox="0 0 578 4"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <radialGradient
-            cx="50%"
-            cy="0%"
-            fx="50%"
-            fy="0%"
-            r="8231.81018%"
-            gradientTransform="translate(0.500000,0.000000),scale(0.006920,1.000000),rotate(4.946195),translate(-0.500000,-0.000000)"
-            id="radialGradient-1"
-          >
-            <stop stop-color="#D8D8D8" offset="0%"></stop>
-            <stop
-              stop-color="#EEEEEE"
-              stop-opacity="0.127321897"
-              offset="100%"
-            ></stop>
-          </radialGradient>
-        </defs>
-        <g
-          id="Page-1"
-          stroke="none"
-          stroke-width="1"
-          fill="none"
-          fill-rule="evenodd"
+      <rect>
+        <svg
+          width="100%"
+          height="4px"
+          viewBox="0 0 578 4"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
         >
+          <defs>
+            <radialGradient
+              cx="50%"
+              cy="0%"
+              fx="50%"
+              fy="0%"
+              r="8231.81018%"
+              gradientTransform="translate(0.500000,0.000000),scale(0.006920,1.000000),rotate(4.946195),translate(-0.500000,-0.000000)"
+              id="radialGradient-1"
+            >
+              <stop stop-color="#D8D8D8" offset="0%"></stop>
+              <stop
+                stop-color="#EEEEEE"
+                stop-opacity="0.127321897"
+                offset="100%"
+              ></stop>
+            </radialGradient>
+          </defs>
           <g
-            id="Contact"
-            transform="translate(-418.000000, -890.000000)"
-            fill="url(#radialGradient-1)"
+            id="Page-1"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
           >
-            <rect id="Rectangle" x="418" y="890" width="578" height="4"></rect>
+            <g
+              id="Contact"
+              transform="translate(-418.000000, -890.000000)"
+              fill="url(#radialGradient-1)"
+            >
+              <rect
+                id="Rectangle"
+                x="418"
+                y="890"
+                width="578"
+                height="4"
+              ></rect>
+            </g>
           </g>
-        </g>
-      </svg>
+        </svg>
+      </rect>
       <Meeting>Or fill out the following contact form</Meeting>
       <Buttons>
         <Button text="Submit" link="/submit"></Button>

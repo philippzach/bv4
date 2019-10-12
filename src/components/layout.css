@@ -638,3 +638,11 @@ pre tt:after {
     font-size: 100%;
   }
 }
+@media only screen and (max-width: 850px) {
+  .headerpic {
+    height: 450px;
+  }
+  .headerpic-layout2 {
+    height: 250px;
+  }
+}

@@ -47,6 +47,10 @@ const CardLayout = styled.div`
   grid-gap: 4em;
   justify-content: center;
   padding: 0 0 6em 0;
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 `
 const Subheading = styled.h3`
   max-width: 40em;
@@ -211,6 +215,7 @@ export class investors extends Component {
           </Card>
         </CardLayout>
         <Subheading>{this.props.longtext}</Subheading>
+        <div style={{ padding: "2em" }} />
       </Container>
     )
   }
