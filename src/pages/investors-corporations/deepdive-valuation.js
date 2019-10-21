@@ -26,7 +26,7 @@ const Deep = ({ data }) => (
     howText="Next to the team assessment, the DeepDive provides you with a detailed analysis of the product, market, and business model. Positive as well as negative findings are summarized in each section. The management report concludes with a synthesis, an independent valuation, and investment recommendation by BV4.
 "
     ctaText="Get in touch to receive more information or let us challenge your valuation with a second opinion"
-    ctaButton="Contact Us"
+    ctaButton="Contact us"
     ctaLink="/contact-us"
   />
 )

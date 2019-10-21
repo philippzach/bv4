@@ -18,7 +18,7 @@ const Card = styled.div`
   }
   h2 {
     margin-bottom: 0;
-    font-family: futura;
+    font-family: calibri;
     font-weight: bold;
     color: white;
     padding: 1em 0 0.7em;
@@ -27,7 +27,7 @@ const Card = styled.div`
     margin-bottom: 0;
   }
   span {
-    font-family: roboto;
+    font-family: calibri;
     font-weight: bold;
     color: white;
     margin-top: -1.2em;
@@ -55,7 +55,7 @@ const CardLayout = styled.div`
 const Subheading = styled.h3`
   max-width: 40em;
   color: #2f5495;
-  font-family: roboto;
+  font-family: calibri;
   font-weight: 500;
   line-height: 1.75em;
 `

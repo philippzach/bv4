@@ -32,7 +32,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Roboto:400,500,700"],
+          families: ["Calibri:400,500,700"],
         },
       },
     },

@@ -43,9 +43,8 @@ const List = styled.ul`
 `
 const ListItem = styled.li`
   margin: 0;
-  padding-right: 1.45em;
-  color: #2f5495;
-  font-family: Roboto;
+
+  font-family: calibri;
   font-weight: 500;
   font-size: 16px;
 `
@@ -77,13 +76,27 @@ const MobileList = styled.div`
     color: #2f5495;
     font-size: 1.25em;
     text-transform: uppercase;
-    font-family: futura;
+    font-family: calibri;
     padding-right: 1em;
   }
 `
 const MobileContainer = styled.div`
   padding: 3em 0;
   background-color: rgba(255, 255, 255, 0.9);
+`
+
+const LinkStyle = {
+  color: "#2f5495",
+  padding: "1em",
+}
+const ActiveLinkStyle = {
+  backgroundColor: "#2f5495",
+  color: "white",
+}
+const DownArrow = styled.span`
+  @media (max-width: 785px) {
+    display: none;
+  }
 `
 
 class Header extends Component {
@@ -171,21 +184,77 @@ class Header extends Component {
           </LogoContainer>
           <Menu>
             <List>
-              <Link to="/startups">
-                <ListItem>Startups</ListItem>
-              </Link>
-              <Link to="/investors-corporations">
-                <ListItem>Investors</ListItem>
-              </Link>
-              <Link to="/about-us">
-                <ListItem>About</ListItem>
-              </Link>
-              <Link to="/contact-us">
-                <ListItem>Contact</ListItem>
-              </Link>
-              <Link to="/">
-                <ListItem>Blog</ListItem>
-              </Link>
+              <ListItem id="firstli">
+                <Link
+                  to="/startups"
+                  style={LinkStyle}
+                  activeStyle={ActiveLinkStyle}
+                  partiallyActive={true}
+                >
+                  Startups <DownArrow>&#9662;</DownArrow>
+                </Link>
+                <ul id="secondul">
+                  <Link to="/startups/financial-modelling">
+                    <li>Financial Modelling</li>
+                  </Link>
+                  <Link to="/startups/rating">
+                    <li>Rating</li>
+                  </Link>
+                  <Link to="/startups/valuation">
+                    <li>Valuation</li>
+                  </Link>
+                </ul>
+              </ListItem>
+
+              <ListItem id="firstli">
+                <Link
+                  to="/investors-corporations"
+                  style={LinkStyle}
+                  activeStyle={ActiveLinkStyle}
+                  partiallyActive={true}
+                >
+                  Investors <DownArrow>&#9662;</DownArrow>
+                </Link>
+                <ul id="secondul">
+                  <Link to="/investors-corporations/deepdive-valuation">
+                    <li>Deepdive / Valuation</li>
+                  </Link>
+                  <Link to="/investors-corporations/due-diligence">
+                    <li>Due Diligence</li>
+                  </Link>
+                  <Link to="/investors-corporations/scouting-rating">
+                    <li>Scouting / Rating</li>
+                  </Link>
+                </ul>
+              </ListItem>
+
+              <ListItem>
+                <Link
+                  to="/about-us"
+                  style={LinkStyle}
+                  activeStyle={ActiveLinkStyle}
+                >
+                  About
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link
+                  to="/contact-us"
+                  style={LinkStyle}
+                  activeStyle={ActiveLinkStyle}
+                >
+                  Contact
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link
+                  to="/blog"
+                  style={LinkStyle}
+                  activeStyle={ActiveLinkStyle}
+                >
+                  Blog
+                </Link>
+              </ListItem>
             </List>
           </Menu>
         </FlexContainer>

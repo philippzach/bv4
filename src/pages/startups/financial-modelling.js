@@ -23,7 +23,7 @@ const Financial = ({ data }) => (
     howSub="Business Modeling"
     howText="BV4 has assessed and supported many Startups in financial modeling in the past. We can develop and improve your existing financial model or build one from scratch."
     ctaText="Get in touch to receive more information about our Financial Modeling services"
-    ctaButton="Contact Us"
+    ctaButton="Contact us"
     ctaLink="/contact-us"
   />
 )

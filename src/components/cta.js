@@ -11,7 +11,7 @@ const Container = styled.div`
 
 const Heading = styled.h3`
   font-weight: bold;
-  font-family: futura;
+  font-family: calibri;
   line-height: 1.33em;
   color: #2f5495;
 `

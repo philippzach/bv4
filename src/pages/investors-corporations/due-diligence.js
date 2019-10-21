@@ -27,7 +27,7 @@ const Due = ({ data }) => (
     howText="BV4’s Due Diligence process prepares Investors to execute the deal and helps to minimize Startup deal risks in four dimensions: finance, commercial, legal, and valuation. 
 "
     ctaText="Get in touch to receive more information about our Due Diligence services"
-    ctaButton="Contact Us"
+    ctaButton="Contact us"
     ctaLink="/contact-us"
   />
 )

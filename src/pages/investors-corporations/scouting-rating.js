@@ -23,7 +23,7 @@ const Scout = ({ data }) => (
     howSub="Rating Method"
     howText="The independent Startup Rating of BV4 evaluates the attractiveness of a Startup to a potential Investor. It covers four dimensions: team, product, market, and business model. The rating model is especially suited for evaluating Early Stage Startups such as Seed and Series A."
     ctaText="Get in touch to receive more information about our Scouting / Rating services"
-    ctaButton="Contact Us"
+    ctaButton="Contact us"
     ctaLink="/contact-us"
   />
 )

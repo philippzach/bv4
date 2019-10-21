@@ -10,31 +10,31 @@ import "./layout.css"
 const Heading = styled.h1`
   position: absolute;
   z-index: 10;
-  font-family: futura;
+  font-family: calibri;
   font-weight: bold;
   color: #25457f;
   line-height: 1.25em;
-  max-width: 80%;
-  left: 120px;
+  max-width: 700px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 150px;
   @media (max-width: 600px) {
-    left: 50px;
+    left: 37%;
     top: 100px;
   }
   @media (min-width: 601px) and (max-width: 850px) {
-    left: 100px;
+    left: 37%;
   }
   @media (min-width: 1050px) and (max-width: 1249px) {
-    top: 220px;
+    top: 200px;
+    max-width: 1000px;
   }
   @media (min-width: 1250px) and (max-width: 1499px) {
-    top: 250px;
+    top: 200px;
   }
   @media (min-width: 1500px) {
     max-width: 800px;
     top: 300px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 `
 const FooterBg = styled.footer`
@@ -54,7 +54,7 @@ const Layout = ({ children, data }) => {
         className="headerpic"
         fluid={data.childImageSharp.fluid}
         alt="bv4 header image"
-        style={{ zIndex: "-1" }}
+        style={{ zIndex: "-1", maxHeight: "450px" }}
       ></Img>
 
       <main>{children}</main>

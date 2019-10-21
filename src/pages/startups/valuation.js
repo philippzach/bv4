@@ -23,7 +23,7 @@ const Valuation = ({ data }) => (
     howSub="Valuation Methodology"
     howText="The BV4 Startup Valuation framework consists of three different methods: discounted cash flow, market approach and the proprietary data-driven BV4 Model. Each valuation method has its own strengths and weaknesses. To receive a true & fair value, the methods are weighted according to the validity which is mainly based on the stage of the Startup."
     ctaText="Get in touch to receive more information or let us challenge your Valuation with a second opinion"
-    ctaButton="Contact Us"
+    ctaButton="Contact us"
     ctaLink="/contact-us"
   />
 )

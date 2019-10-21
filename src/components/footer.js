@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 import LogoSm from "../images/logo-sm.svg"
+import LinkedIn from "../images/linkedin.svg"
 
 const FooterBg = styled.footer`
   background-color: #f6f7f9;
@@ -12,7 +13,7 @@ const Container = styled.div`
   padding: 0 0 1rem 0;
 `
 const Grid = styled.div`
-  font-family: futura;
+  font-family: calibri;
   font-size: 0.8em;
 
   padding: 1.45rem 1.5em;
@@ -54,10 +55,11 @@ const OtherHolzbau = styled.div`
 `
 const Copyright = styled.div`
   padding: 0 1.5em;
-  font-family: futura;
+  font-family: calibri;
   font-weight: 800;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 `
 const Contact = styled.div`
   @media (max-width: 669px) {
@@ -126,11 +128,15 @@ const Footer = () => (
       </Grid>
       <hr />
       <Copyright>
-        <span style={{ fontSize: "0.65em" }}>
+        <span style={{ fontSize: "0.65em", paddingRight: "20px" }}>
           © {new Date().getFullYear()},{` `}
           BV4
         </span>
-        <span></span>
+        <span>
+        <a href="https://www.linkedin.com/company/bv4-ltd/">
+        <img style={{marginBottom: "0", transform: "scale(0.8)"}} src={LinkedIn} />
+
+        </a></span>
       </Copyright>
     </Container>
   </FooterBg>

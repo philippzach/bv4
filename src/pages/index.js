@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+
 import styled from "@emotion/styled"
 import Container from "../components/container"
 import Logo1 from "../images/logo1.svg"
@@ -18,6 +19,7 @@ import Startup from "../images/pl-startup.svg"
 
 import Layout from "../components/layout"
 import Cta from "../components/cta"
+import Gallery from "../components/logo-carousel"
 
 import SEO from "../components/seo"
 
@@ -30,7 +32,7 @@ const LogoContainer = styled.div`
   box-shadow: rgba(0, 0, 0, 0.14) 4px 5px 9px;
   margin-top: -2.5em;
   margin-bottom: 5em;
-  display: grid;
+  /*  display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
 
@@ -45,7 +47,7 @@ const LogoContainer = styled.div`
     @media (max-width: 650px) {
       padding: 0.5em;
     }
-  }
+  } */
 `
 
 const Card = styled.div`
@@ -63,7 +65,7 @@ const Card = styled.div`
   }
   h2 {
     margin-bottom: 0;
-    font-family: futura;
+    font-family: calibri;
     font-weight: bold;
     color: #2f5495;
     padding: 1em 0 0.7em;
@@ -72,7 +74,7 @@ const Card = styled.div`
     margin-bottom: 0;
   }
   span {
-    font-family: roboto;
+    font-family: calibri;
     font-weight: bold;
     color: #2f5495;
     margin-top: -1.2em;
@@ -210,40 +212,10 @@ const IndexPage = ({ data }) => (
       </Container>
     </BlueBackground>
     <Container>
-      <LogoContainer>
-        <div>
-          <img src={Logo1} alt="" />
-        </div>
-        <div>
-          <img src={Logo2} alt="" />
-        </div>
-        <div>
-          <img src={Logo3} alt="" />
-        </div>
-        <div>
-          <img src={Logo4} alt="" />
-        </div>
-        <div>
-          <img src={Logo5} alt="" />
-        </div>
-        <div>
-          <img src={Logo6} alt="" />
-        </div>
-        <div>
-          <img src={Logo7} alt="" />
-        </div>
-        <div>
-          <img src={Logo8} alt="" />
-        </div>
-        <div>
-          <img src={Logo9} alt="" />
-        </div>
-        <div>
-          <img src={Logo10} alt="" />
-        </div>
-      </LogoContainer>
+      <Gallery />
+
       <Cta
-        text="Learn more abut our unique approach and what we offer"
+        text="Learn more about our unique approach and what we offer"
         buttonText="Contact us"
         link="/contact-us"
       />

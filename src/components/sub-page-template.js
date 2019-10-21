@@ -19,7 +19,7 @@ const Header = styled.div`
 `
 const Top = styled.h2`
   color: #2f5496;
-  font-family: futura;
+  font-family: calibri;
   font-weight: bold;
   max-width: 650px;
   line-height: 1.25em;
@@ -76,13 +76,13 @@ const IconTextContainer = styled.div`
   }
   h3 {
     color: #2f5496;
-    font-family: futura;
+    font-family: calibri;
     font-weight: 400;
     line-height: 1.2em;
   }
   p {
     color: #2f5496;
-    font-family: roboto;
+    font-family: calibri;
     font-weight: 400;
   }
 `
@@ -117,18 +117,18 @@ const HowText = styled.div`
   }
   h3 {
     color: white;
-    font-family: futura;
+    font-family: calibri;
     font-weight: bold;
     margin-bottom: 0.5em;
   }
   span {
     color: white;
-    font-family: futura;
+    font-family: calibri;
     font-weight: 400;
   }
   p {
     color: white;
-    font-family: roboto;
+    font-family: calibri;
     font-weight: 400;
     padding-top: 2em;
     line-height: 2em;
@@ -195,7 +195,11 @@ const Template = props => (
         </div>
       </HowText>
       <HowImage>
-        <Img fluid={props.data.how.childImageSharp.fluid} alt="how to image" />
+        <Img
+          style={{ maxHeight: "375px" }}
+          fluid={props.data.how.childImageSharp.fluid}
+          alt="how to image"
+        />
       </HowImage>
     </HowContainer>
     <Spacer />

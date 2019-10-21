@@ -10,7 +10,7 @@ import "./layout.css"
 const Heading = styled.h1`
   position: absolute;
   z-index: 10;
-  font-family: futura;
+  font-family: calibri;
   font-weight: bold;
   color: white;
   text-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px;
@@ -26,13 +26,13 @@ const Heading = styled.h1`
     top: 120px;
   }
   @media (min-width: 1050px) and (max-width: 1249px) {
-    top: 220px;
+    top: 120px;
   }
   @media (min-width: 1250px) and (max-width: 1499px) {
-    top: 250px;
+    top: 120px;
   }
   @media (min-width: 1500px) {
-    top: 300px;
+    top: 120px;
   }
 `
 const FooterBg = styled.footer`
@@ -49,7 +49,7 @@ const Layout = ({ children, data, heading }) => {
         className="headerpic-layout2"
         fluid={data.childImageSharp.fluid}
         alt="bv4 header image"
-        style={{ zIndex: "-1" }}
+        style={{ zIndex: "-1", maxHeight: "250px" }}
       ></Img>
 
       <main>{children}</main>
