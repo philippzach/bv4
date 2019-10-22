@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `BV4 - Certified Valuation Experts`,
@@ -34,6 +38,14 @@ module.exports = {
         google: {
           families: ["Calibri:400,500,700"],
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: `bv4-blog`,
+        accessToken: `${process.env.API_KEY}`,
+        linkResolver: ({ node, key, value }) => post => `/${post.uid}`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
