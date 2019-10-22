@@ -6,22 +6,20 @@ import SEO from "../components/seo"
 import BlogGrid from "../components/Blog/bloggrid"
 
 const Container = styled.div`
-max-width: 800px;
-margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 `
 
-
 const Blog = ({ data }) => (
-    <Layout data={data.contactus} heading="Contact Us">
-    
-      <SEO title="Blog" description="Blog and News" />
+  <Layout data={data.contactus} heading="Blog / News">
+    <SEO title="Blog" description="Blog and News" />
     <Container>
-    <BlogGrid posts={data.posts.edges} />
-          </Container>
-    </Layout>
-  )
-  
-  export default Blog
+      <BlogGrid posts={data.posts.edges} />
+    </Container>
+  </Layout>
+)
+
+export default Blog
 
 export const query = graphql`
   query {
