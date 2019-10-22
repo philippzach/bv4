@@ -69,22 +69,21 @@ const TeamGrid = styled.section`
   }
 `
 const TeamGridCon = styled.div`
-margin: 5em 0;
-display: flex;
-    justify-content: center;
-
+  margin: 5em 0;
+  display: flex;
+  justify-content: center;
 `
 const SingleTeam = styled.div`
   text-align: center;
   display: grid;
-  box-shadow: rgba(0,0,0,.1) 4px 0px 6px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 4px 0px 6px 0;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.25fr;
 `
 const MemberInfo = styled.div`
   display: grid;
-  background-color: #FAFAFA;
-  padding: .5em 0;
+  background-color: #fafafa;
+  padding: 0.5em 0;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 `
@@ -105,7 +104,7 @@ const Do = styled.span`
   font-weight: 400;
 `
 const Linke = styled.div`
-text-align: center;
+  text-align: center;
 `
 
 const About = ({ data }) => (
@@ -178,98 +177,98 @@ const About = ({ data }) => (
         ecosystem and its investment environment.
       </Subheading>
       <TeamGridCon>
-      <TeamGrid>
-        <SingleTeam>
-          <ImageContainer>
-            <Img fixed={data.team1.childImageSharp.fixed} alt="" />
-          </ImageContainer>
-          <MemberInfo>
-            <Name>Peter Schmid</Name>
-            <Title>CEO</Title>
-            <Do>Business Development</Do>
-            <Linke>
-          <a href="https://www.linkedin.com/company/bv4-ltd/">
-            <img style={{marginBottom: "0"}} src={Linked} />
-          </a>
-            </Linke>
-          </MemberInfo>
-        </SingleTeam>
-        <SingleTeam>
-          <ImageContainer>
-            <Img fixed={data.team2.childImageSharp.fixed} alt="" />
-          </ImageContainer>
-          <MemberInfo>
-            <Name>Pascal Stämpfli</Name>
-            <Title>Lead Analyst, CFA</Title>
-            <Do>Finance</Do>
-            <Linke>
-          <a href="https://www.linkedin.com/company/bv4-ltd/">
-            <img style={{marginBottom: "0"}} src={Linked} />
-          </a>
-            </Linke>
-          </MemberInfo>
-        </SingleTeam>
-        <SingleTeam>
-          <ImageContainer>
-            <Img fixed={data.team3.childImageSharp.fixed} alt="" />
-          </ImageContainer>
-          <MemberInfo>
-            <Name>Dorian Ebneter</Name>
-            <Title>Associate</Title>
-            <Do>Consulting</Do>
-            <Linke>
-          <a href="https://www.linkedin.com/company/bv4-ltd/">
-            <img style={{marginBottom: "0"}} src={Linked} />
-          </a>
-            </Linke>
-          </MemberInfo>
-        </SingleTeam>
-        <SingleTeam>
-          <ImageContainer>
-            <Img fixed={data.team4.childImageSharp.fixed} alt="" />
-          </ImageContainer>
-          <MemberInfo>
-            <Name> Anna Sereika</Name>
-            <Title>Startup Analyst</Title>
-            <Do>Finance</Do>
-            <Linke>
-          <a href="https://www.linkedin.com/company/bv4-ltd/">
-            <img style={{marginBottom: "0"}} src={Linked} />
-          </a>
-            </Linke>
-          </MemberInfo>
-        </SingleTeam>
-        <SingleTeam>
-          <ImageContainer>
-            <Img fixed={data.team5.childImageSharp.fixed} alt="" />
-          </ImageContainer>
-          <MemberInfo>
-            <Name> Jeremy Meier</Name>
-            <Title>Startup Analyst</Title>
-            <Do>Consulting</Do>
-            <Linke>
-          <a href="https://www.linkedin.com/company/bv4-ltd/">
-            <img style={{marginBottom: "0"}} src={Linked} />
-          </a>
-            </Linke>
-          </MemberInfo>
-        </SingleTeam>
-        <SingleTeam>
-          <ImageContainer>
-            <Img fixed={data.team6.childImageSharp.fixed} alt="" />
-          </ImageContainer>
-          <MemberInfo>
-            <Name>Vuk Vegezzi</Name>
-            <Title>Startup Analyst</Title>
-            <Do>Consulting</Do>
-            <Linke>
-          <a href="https://www.linkedin.com/company/bv4-ltd/">
-            <img style={{marginBottom: "0"}} src={Linked} />
-          </a>
-            </Linke>
-          </MemberInfo>
-        </SingleTeam>
-      </TeamGrid>
+        <TeamGrid>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.team1.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Peter Schmid</Name>
+              <Title>CEO</Title>
+              <Do>Business Development</Do>
+              <Linke>
+                <a href="https://www.linkedin.com/in/peter-schmid-9049a68/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.team2.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Pascal Stämpfli</Name>
+              <Title>Lead Analyst, CFA</Title>
+              <Do>Finance</Do>
+              <Linke>
+                <a href="https://www.linkedin.com/in/pascal-st%C3%A4mpfli/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.team3.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Dorian Ebneter</Name>
+              <Title>Associate</Title>
+              <Do>Consulting</Do>
+              <Linke>
+                <a href="https://www.linkedin.com/in/dorian-ebneter-aa63aa143/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.team4.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name> Anna Sereika</Name>
+              <Title>Startup Analyst</Title>
+              <Do>Finance</Do>
+              <Linke>
+                <a href="https://www.linkedin.com/in/anna-sereika-a8256258/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.team5.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name> Jeremy Meier</Name>
+              <Title>Startup Analyst</Title>
+              <Do>Consulting</Do>
+              <Linke>
+                <a href="https://www.linkedin.com/in/jeremy-meier/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.team6.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Vuk Vegezzi</Name>
+              <Title>Startup Analyst</Title>
+              <Do>Consulting</Do>
+              <Linke>
+                <a href="ttps://www.linkedin.com/in/vuk-vegezzi-114880104/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+        </TeamGrid>
       </TeamGridCon>
     </Container>
   </Layout>
