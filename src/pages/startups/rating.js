@@ -22,8 +22,8 @@ const Scouting = ({ data }) => (
     icon3para="The services of BV4 are highly trusted by a wide range of Investors in Switzerland and internationally. Rated Startups benefit from an increased exposure and visibility to potential investors via the BV4 network. This increases the possibility of funding as well as market recognition. "
     howSub="Rating Model"
     howText="BV4’s independent Startup Rating evaluates the attractiveness of a Startup to a potential Investor. The model is especially suited for evaluating Early Stage startups such as Seed and Series A. Our methodology was developed together with the University of St. Gallen."
-    ctaText="Apply for a FREE Rating"
-    ctaButton="Now"
+    ctaText=""
+    ctaButton="Apply for a FREE Rating"
     ctaLink="/contact-us"
   />
 )
@@ -35,20 +35,22 @@ export const data = graphql`
     landing: file(relativePath: { eq: "rating.jpg" }) {
       childImageSharp {
         fluid(
-          maxWidth: 1900
+          maxWidth: 2900
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
     how: file(relativePath: { eq: "rating-bottom.jpg" }) {
       childImageSharp {
         fluid(
-          maxWidth: 1900
+          maxWidth: 2900
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

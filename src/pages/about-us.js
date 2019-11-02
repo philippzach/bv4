@@ -15,7 +15,7 @@ import Icon5 from "../images/about5.svg"
 import Icon6 from "../images/about6.svg"
 
 const Heading = styled.h2`
-  font-family: futura;
+  font-family: calibri;
   font-weight: bold;
   color: #2f5496;
   margin: 2em 0;
@@ -28,7 +28,7 @@ const Grid = styled.section`
   grid-gap: 4em;
   @media (max-width: 850px) {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(6, 1fr);
   }
 `
 
@@ -89,17 +89,17 @@ const MemberInfo = styled.div`
 `
 const ImageContainer = styled.div``
 const Name = styled.span`
-  font-family: futura;
+  font-family: calibri;
   font-weight: bold;
   color: #2f5496;
 `
 const Title = styled.span`
-  font-family: roboto;
+  font-family: calibri;
   color: #2f5496;
   font-weight: 500;
 `
 const Do = styled.span`
-  font-family: roboto;
+  font-family: calibri;
   color: #2f5496;
   font-weight: 400;
 `
@@ -281,10 +281,11 @@ export const data = graphql`
     about: file(relativePath: { eq: "about.jpg" }) {
       childImageSharp {
         fluid(
-          maxWidth: 1900
+          maxWidth: 2900
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
@@ -292,9 +293,10 @@ export const data = graphql`
       childImageSharp {
         fixed(
           height: 300
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }
@@ -302,9 +304,10 @@ export const data = graphql`
       childImageSharp {
         fixed(
           height: 300
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }
@@ -312,9 +315,10 @@ export const data = graphql`
       childImageSharp {
         fixed(
           height: 300
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }
@@ -322,9 +326,10 @@ export const data = graphql`
       childImageSharp {
         fixed(
           height: 300
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }
@@ -332,9 +337,10 @@ export const data = graphql`
       childImageSharp {
         fixed(
           height: 300
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }
@@ -342,9 +348,10 @@ export const data = graphql`
       childImageSharp {
         fixed(
           height: 300
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed_tracedSVG
         }
       }
     }

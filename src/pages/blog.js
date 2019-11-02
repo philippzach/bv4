@@ -11,7 +11,7 @@ const Container = styled.div`
 `
 
 const Blog = ({ data }) => (
-  <Layout data={data.contactus} heading="Blog / News">
+  <Layout data={data.contactus} heading="Blog">
     <SEO title="Blog" description="Blog and News" />
     <Container>
       <BlogGrid posts={data.posts.edges} />

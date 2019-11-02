@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 
 const Button = styled.button`
   color: #646464;
-  font-family: futura;
+  font-family: calibri;
   font-weight: bold;
   box-shadow: rgba(34, 34, 34, 0.3) 0 4px 7px;
   background-color: #ded2ad;

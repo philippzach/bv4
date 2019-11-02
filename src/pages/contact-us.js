@@ -7,7 +7,7 @@ import Layout from "../components/layout-2"
 import SEO from "../components/seo"
 
 const Heading = styled.h1`
-  font-family: futura;
+  font-family: calibri;
   color: #2f5496;
   margin: 1.5em 0 1em 0;
 `
@@ -18,13 +18,13 @@ const Text = styled.div`
   text-align: center;
 `
 const Phone = styled.span`
-  font-family: roboto;
+  font-family: calibri;
   font-weight: bold;
   font-size: 1.25em;
 `
 const Hours = styled.span`
   color: #888686;
-  font-family: roboto;
+  font-family: calibri;
   display: block;
   font-size: 0.75em;
 `
@@ -35,7 +35,7 @@ const Buttons = styled.div`
   justify-content: space-around;
 `
 const Meeting = styled.h2`
-  font-family: futura;
+  font-family: calibri;
   font-weight: bold;
   font-size: 1.2em;
   margin-top: 2em;
@@ -118,10 +118,11 @@ export const data = graphql`
     contactus: file(relativePath: { eq: "contactus.jpg" }) {
       childImageSharp {
         fluid(
-          maxWidth: 1900
+          maxWidth: 2900
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

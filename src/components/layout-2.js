@@ -19,7 +19,10 @@ const Heading = styled.h1`
   left: 50%;
   transform: translateX(-50%);
   top: 150px;
-  @media (max-width: 600px) {
+  @media (max-width: 410px) {
+    display: none;
+  }
+  @media (max-width: 600px) and (min-width: 411px) {
     top: 120px;
   }
   @media (min-width: 601px) and (max-width: 850px) {

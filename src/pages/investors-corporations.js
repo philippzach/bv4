@@ -33,10 +33,11 @@ export const data = graphql`
     investors: file(relativePath: { eq: "investors.jpg" }) {
       childImageSharp {
         fluid(
-          maxWidth: 1900
+          maxWidth: 2900
+          quality: 100
           traceSVG: { background: "#ffff", color: "#2f5495" }
         ) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

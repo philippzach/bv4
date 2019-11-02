@@ -34,7 +34,7 @@ const Heading = styled.h1`
   }
   @media (min-width: 1500px) {
     max-width: 800px;
-    top: 300px;
+    top: 200px;
   }
 `
 const FooterBg = styled.footer`
