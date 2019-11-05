@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Button from "../components/button-phone"
+import HubspotForm from "react-hubspot-form"
 
 import Layout from "../components/layout-2"
 import SEO from "../components/seo"
@@ -105,7 +106,21 @@ const Contact = ({ data }) => (
       </rect>
       <Meeting>Or fill out the following contact form</Meeting>
       <Buttons>
-        <Button text="Submit" link="/submit"></Button>
+        <HubspotForm
+          portalId="6396166"
+          formId="930c14ae-26a0-4a27-8e2b-e548e9cc594b"
+          onSubmit={() => console.log("Submit!")}
+          onReady={form => console.log("Form ready!")}
+          loading={
+            <div class="lds-ellipsis">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          }
+        />
+        {/* <Button text="Submit" link="/submit"></Button> */}
       </Buttons>
     </Text>
   </Layout>
