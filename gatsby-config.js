@@ -7,10 +7,13 @@ module.exports = {
     title: `BV4 - Certified Valuation Experts`,
     description: `The leading independent experts in Startup Scouting, Assessment and
     Valuation`,
+    siteUrl: "https://www.bv4.ch",
     author: `@philipp.zach`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -55,9 +58,9 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
 
         // Specify optional GTM environment details.
-        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        dataLayerName: "YOUR_DATA_LAYER_NAME",
+        //gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        //gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        //dataLayerName: "YOUR_DATA_LAYER_NAME",
       },
     },
     {
