@@ -243,11 +243,26 @@ const About = ({ data }) => (
               <Img fixed={data.team4.childImageSharp.fixed} alt="" />
             </ImageContainer>
             <MemberInfo>
-              <Name> Anna Sereika</Name>
+              <Name>Anna Sereika</Name>
               <Title>Startup Analyst</Title>
               <Do>Finance</Do>
               <Linke>
                 <a href="https://www.linkedin.com/in/anna-sereika-a8256258/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.team5.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Edgar Kussberg</Name>
+              <Title>Advisor/Analyst</Title>
+              <Do>Technology</Do>
+              <Linke>
+                <a href="https://www.linkedin.com/in/kussberg/">
                   <img style={{ marginBottom: "0" }} src={Linked} />
                 </a>
               </Linke>
