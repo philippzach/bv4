@@ -259,7 +259,7 @@ const About = ({ data }) => (
             </ImageContainer>
             <MemberInfo>
               <Name>Edgar Kussberg</Name>
-              <Title>Advisor/Analyst</Title>
+              <Title>Senior Expert</Title>
               <Do>Technology</Do>
               <Linke>
                 <a href="https://www.linkedin.com/in/kussberg/">
