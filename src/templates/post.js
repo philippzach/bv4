@@ -15,12 +15,13 @@ import "./post.css"
 const Container = styled.div`
   max-width: 1050px;
   margin: 0 auto;
+  padding: 0 1.5em;
 `
 
 const ImageContainer = styled.header`
   background: #2f5495;
-color: white;
-font-family: calibri;
+  color: white;
+  font-family: calibri;
   margin: 0;
   box-shadow: inset 0px 30px 106px -54px rgba(0, 0, 0, 0.62);
   text-align: center;

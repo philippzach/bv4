@@ -8,6 +8,7 @@ import BlogGrid from "../components/Blog/bloggrid"
 const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 1.5em;
 `
 
 const Blog = ({ data }) => (

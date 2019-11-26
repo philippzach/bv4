@@ -142,7 +142,7 @@ const About = ({ data }) => (
             <img src={Icon4} alt="bv4 icon" />
           </div>
           <TextContainer>
-            <Text>ISO-certified ​&​ Independent</Text>
+            <Text>ISO-certified (ISO 10668) ​&​ Independent</Text>
           </TextContainer>
         </Card>
         <Card>
@@ -159,7 +159,7 @@ const About = ({ data }) => (
           </div>
           <TextContainer>
             <Text>
-              Driven Team with a wide range of Know-How related of the Startup
+              Driven Team with a wide range of Know-How related to the Startup
               Ecosystem
             </Text>
           </TextContainer>
