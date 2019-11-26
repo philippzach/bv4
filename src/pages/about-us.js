@@ -150,7 +150,7 @@ const About = ({ data }) => (
             <img src={Icon5} alt="bv4 icon" />
           </div>
           <TextContainer>
-            <Text>Key Partner of Swiss Startup Capital AG</Text>
+            <Text>Proud Partner of key Startup Organisations</Text>
           </TextContainer>
         </Card>
         <Card>
@@ -225,10 +225,25 @@ const About = ({ data }) => (
           </SingleTeam>
           <SingleTeam>
             <ImageContainer>
+              <Img fixed={data.team6.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Vuk Vegezzi</Name>
+              <Title>Startup Analyst</Title>
+              <Do>Consulting</Do>
+              <Linke>
+                <a href="ttps://www.linkedin.com/in/vuk-vegezzi-114880104/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
               <Img fixed={data.team4.childImageSharp.fixed} alt="" />
             </ImageContainer>
             <MemberInfo>
-              <Name> Anna Sereika</Name>
+              <Name>Anna Sereika</Name>
               <Title>Startup Analyst</Title>
               <Do>Finance</Do>
               <Linke>
@@ -243,26 +258,11 @@ const About = ({ data }) => (
               <Img fixed={data.team5.childImageSharp.fixed} alt="" />
             </ImageContainer>
             <MemberInfo>
-              <Name> Jeremy Meier</Name>
-              <Title>Startup Analyst</Title>
-              <Do>Consulting</Do>
+              <Name>Edgar Kussberg</Name>
+              <Title>Senior Expert</Title>
+              <Do>Technology</Do>
               <Linke>
-                <a href="https://www.linkedin.com/in/jeremy-meier/">
-                  <img style={{ marginBottom: "0" }} src={Linked} />
-                </a>
-              </Linke>
-            </MemberInfo>
-          </SingleTeam>
-          <SingleTeam>
-            <ImageContainer>
-              <Img fixed={data.team6.childImageSharp.fixed} alt="" />
-            </ImageContainer>
-            <MemberInfo>
-              <Name>Vuk Vegezzi</Name>
-              <Title>Startup Analyst</Title>
-              <Do>Consulting</Do>
-              <Linke>
-                <a href="ttps://www.linkedin.com/in/vuk-vegezzi-114880104/">
+                <a href="https://www.linkedin.com/in/kussberg/">
                   <img style={{ marginBottom: "0" }} src={Linked} />
                 </a>
               </Linke>

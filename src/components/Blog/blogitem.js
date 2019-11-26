@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import "./blog.css"
 
 const List = styled.article`
-font-family: calibri;
+  font-family: calibri;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
@@ -25,7 +25,7 @@ font-family: calibri;
 `
 
 const Footer = styled.p`
-font-family: calibri;
+  font-family: calibri;
   color: rgb(55, 55, 54);
   margin-bottom: 0;
   font-size: 0.75em;
@@ -64,12 +64,16 @@ export default class BlogItemDE extends Component {
     const DateString = new Date(node.data.date)
     let options = { year: "numeric", month: "long", day: "numeric" }
     const PubDate = DateString.toLocaleDateString("de-AT", options)
+    const fluid = node.data.headerimage.localFile
+      ? node.data.headerimage.localFile.childImageSharp.fluid
+      : null
+    if (fluid === null) return null
     return (
       <List className="blogpost">
         <Link className="blogitemlink" to={`/blog/${node.uid}`}>
           <Img
             className="shadowblog"
-            fluid={node.data.headerimage.localFile.childImageSharp.fluid}
+            fluid={fluid}
             alt={node.data.headerimage.alt}
           />
         </Link>

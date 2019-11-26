@@ -48,17 +48,16 @@ const Post = ({ data: { prismicPost } }) => {
   const DateString = new Date(data.date)
   let options = { year: "numeric", month: "long", day: "numeric" }
   const PubDate = DateString.toLocaleDateString("de-AT", options)
+  const fluid = data.headerimage.localFile
+    ? data.headerimage.localFile.childImageSharp.fluid
+    : null
+  if (fluid === null) return null
   return (
     <>
       <Nav />
       <ProgressBar height="10px" bgcolor="#2f5495" />
       <article>
         <ImageContainer>
-          <Img
-            className="postimage"
-            fluid={data.headerimage.localFile.childImageSharp.fluid}
-            alt={data.headerimage.alt}
-          />
           <div className="headlines">
             <div>
               <Title>{data.title.text}</Title>
