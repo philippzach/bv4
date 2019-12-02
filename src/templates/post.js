@@ -25,7 +25,9 @@ const ImageContainer = styled.header`
   margin: 0;
   box-shadow: inset 0px 30px 106px -54px rgba(0, 0, 0, 0.62);
   text-align: center;
-
+  @media (max-width: 600px) {
+    padding-top: 5em;
+  }
   @media (min-width: 600px) {
     height: 80vh;
     width: 100vw;
