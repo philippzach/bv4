@@ -33,7 +33,7 @@ module.exports = {
         theme_color: `#fff`,
         display: `minimal-ui`,
         icon: `static/favicon-bv4.png`, // This path is relative to the root of the site.
-        include_favicon: false,
+        include_favicon: true,
       },
     },
     {
