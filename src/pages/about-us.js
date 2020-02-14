@@ -193,7 +193,7 @@ const About = ({ data }) => (
               </Linke>
             </MemberInfo>
           </SingleTeam>
-          <SingleTeam>
+          {/*  <SingleTeam>
             <ImageContainer>
               <Img fixed={data.team2.childImageSharp.fixed} alt="" />
             </ImageContainer>
@@ -207,14 +207,14 @@ const About = ({ data }) => (
                 </a>
               </Linke>
             </MemberInfo>
-          </SingleTeam>
+          </SingleTeam> */}
           <SingleTeam>
             <ImageContainer>
               <Img fixed={data.team3.childImageSharp.fixed} alt="" />
             </ImageContainer>
             <MemberInfo>
               <Name>Dorian Ebneter</Name>
-              <Title>Associate</Title>
+              <Title>Lead Analyst</Title>
               <Do>Consulting</Do>
               <Linke>
                 <a href="https://www.linkedin.com/in/dorian-ebneter-aa63aa143/">
@@ -232,7 +232,37 @@ const About = ({ data }) => (
               <Title>Startup Analyst</Title>
               <Do>Consulting</Do>
               <Linke>
-                <a href="ttps://www.linkedin.com/in/vuk-vegezzi-114880104/">
+                <a href="https://www.linkedin.com/in/vuk-vegezzi-114880104/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.chris.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Christian Bückle</Name>
+              <Title>Startup Analyst </Title>
+              <Do>Finance</Do>
+              <Linke>
+                <a href="/about-us">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.pierre.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Pierre Jouve</Name>
+              <Title>Startup Analyst </Title>
+              <Do>Finance</Do>
+              <Linke>
+                <a href="https://www.linkedin.com/in/pierre-jouve-aa06b886/">
                   <img style={{ marginBottom: "0" }} src={Linked} />
                 </a>
               </Linke>
@@ -345,6 +375,28 @@ export const data = graphql`
       }
     }
     team6: file(relativePath: { eq: "team6.jpg" }) {
+      childImageSharp {
+        fixed(
+          height: 300
+          quality: 100
+          traceSVG: { background: "#ffff", color: "#2f5495" }
+        ) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    chris: file(relativePath: { eq: "chris.jpg" }) {
+      childImageSharp {
+        fixed(
+          height: 300
+          quality: 100
+          traceSVG: { background: "#ffff", color: "#2f5495" }
+        ) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
+    pierre: file(relativePath: { eq: "pierre.jpg" }) {
       childImageSharp {
         fixed(
           height: 300
