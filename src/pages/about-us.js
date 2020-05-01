@@ -180,12 +180,27 @@ const About = ({ data }) => (
         <TeamGrid>
           <SingleTeam>
             <ImageContainer>
+              <Img fixed={data.team3.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Dorian Ebneter</Name>
+              <Title>CEO</Title>
+              {/*  <Do>Consulting</Do> */}
+              <Linke>
+                <a href="https://www.linkedin.com/in/dorian-ebneter-aa63aa143/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+          <SingleTeam>
+            <ImageContainer>
               <Img fixed={data.team1.childImageSharp.fixed} alt="" />
             </ImageContainer>
             <MemberInfo>
               <Name>Peter Schmid</Name>
-              <Title>CEO</Title>
-              <Do>Business Development</Do>
+              <Title>Managing Director</Title>
+              {/* <Do>Business Development</Do> */}
               <Linke>
                 <a href="https://www.linkedin.com/in/peter-schmid-9049a68/">
                   <img style={{ marginBottom: "0" }} src={Linked} />
@@ -208,21 +223,7 @@ const About = ({ data }) => (
               </Linke>
             </MemberInfo>
           </SingleTeam> */}
-          <SingleTeam>
-            <ImageContainer>
-              <Img fixed={data.team3.childImageSharp.fixed} alt="" />
-            </ImageContainer>
-            <MemberInfo>
-              <Name>Dorian Ebneter</Name>
-              <Title>Lead Analyst</Title>
-              <Do>Consulting</Do>
-              <Linke>
-                <a href="https://www.linkedin.com/in/dorian-ebneter-aa63aa143/">
-                  <img style={{ marginBottom: "0" }} src={Linked} />
-                </a>
-              </Linke>
-            </MemberInfo>
-          </SingleTeam>
+
           <SingleTeam>
             <ImageContainer>
               <Img fixed={data.team6.childImageSharp.fixed} alt="" />
@@ -230,9 +231,25 @@ const About = ({ data }) => (
             <MemberInfo>
               <Name>Vuk Vegezzi</Name>
               <Title>Startup Analyst</Title>
-              <Do>Consulting</Do>
+              {/* <Do>Consulting</Do> */}
               <Linke>
                 <a href="https://www.linkedin.com/in/vuk-vegezzi-114880104/">
+                  <img style={{ marginBottom: "0" }} src={Linked} />
+                </a>
+              </Linke>
+            </MemberInfo>
+          </SingleTeam>
+
+          <SingleTeam>
+            <ImageContainer>
+              <Img fixed={data.pierre.childImageSharp.fixed} alt="" />
+            </ImageContainer>
+            <MemberInfo>
+              <Name>Pierre Jouve</Name>
+              <Title>Startup Analyst </Title>
+              {/*  <Do>Finance</Do> */}
+              <Linke>
+                <a href="https://www.linkedin.com/in/pierre-jouve-aa06b886/">
                   <img style={{ marginBottom: "0" }} src={Linked} />
                 </a>
               </Linke>
@@ -245,7 +262,7 @@ const About = ({ data }) => (
             <MemberInfo>
               <Name>Christian Bückle</Name>
               <Title>Startup Analyst </Title>
-              <Do>Finance</Do>
+              {/*  <Do>Finance</Do> */}
               <Linke>
                 <a href="/about-us">
                   <img style={{ marginBottom: "0" }} src={Linked} />
@@ -253,22 +270,7 @@ const About = ({ data }) => (
               </Linke>
             </MemberInfo>
           </SingleTeam>
-          <SingleTeam>
-            <ImageContainer>
-              <Img fixed={data.pierre.childImageSharp.fixed} alt="" />
-            </ImageContainer>
-            <MemberInfo>
-              <Name>Pierre Jouve</Name>
-              <Title>Startup Analyst </Title>
-              <Do>Finance</Do>
-              <Linke>
-                <a href="https://www.linkedin.com/in/pierre-jouve-aa06b886/">
-                  <img style={{ marginBottom: "0" }} src={Linked} />
-                </a>
-              </Linke>
-            </MemberInfo>
-          </SingleTeam>
-          <SingleTeam>
+          {/*  <SingleTeam>
             <ImageContainer>
               <Img fixed={data.team4.childImageSharp.fixed} alt="" />
             </ImageContainer>
@@ -282,7 +284,7 @@ const About = ({ data }) => (
                 </a>
               </Linke>
             </MemberInfo>
-          </SingleTeam>
+          </SingleTeam> */}
           <SingleTeam>
             <ImageContainer>
               <Img fixed={data.team5.childImageSharp.fixed} alt="" />
@@ -290,7 +292,7 @@ const About = ({ data }) => (
             <MemberInfo>
               <Name>Edgar Kussberg</Name>
               <Title>Senior Expert</Title>
-              <Do>Technology</Do>
+              {/*  <Do>Technology</Do> */}
               <Linke>
                 <a href="https://www.linkedin.com/in/kussberg/">
                   <img style={{ marginBottom: "0" }} src={Linked} />
