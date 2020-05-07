@@ -199,7 +199,7 @@ const About = ({ data }) => (
             </ImageContainer>
             <MemberInfo>
               <Name>Peter Schmid</Name>
-              <Title>Managing Director</Title>
+              <Title>Senior Advisor</Title>
               {/* <Do>Business Development</Do> */}
               <Linke>
                 <a href="https://www.linkedin.com/in/peter-schmid-9049a68/">
@@ -230,7 +230,7 @@ const About = ({ data }) => (
             </ImageContainer>
             <MemberInfo>
               <Name>Vuk Vegezzi</Name>
-              <Title>Startup Analyst</Title>
+              <Title>Associate</Title>
               {/* <Do>Consulting</Do> */}
               <Linke>
                 <a href="https://www.linkedin.com/in/vuk-vegezzi-114880104/">
@@ -246,7 +246,7 @@ const About = ({ data }) => (
             </ImageContainer>
             <MemberInfo>
               <Name>Pierre Jouve</Name>
-              <Title>Startup Analyst </Title>
+              <Title>Analyst </Title>
               {/*  <Do>Finance</Do> */}
               <Linke>
                 <a href="https://www.linkedin.com/in/pierre-jouve-aa06b886/">
@@ -261,7 +261,7 @@ const About = ({ data }) => (
             </ImageContainer>
             <MemberInfo>
               <Name>Christian Bückle</Name>
-              <Title>Startup Analyst </Title>
+              <Title>Analyst </Title>
               {/*  <Do>Finance</Do> */}
               <Linke>
                 <a href="/about-us">
@@ -291,7 +291,7 @@ const About = ({ data }) => (
             </ImageContainer>
             <MemberInfo>
               <Name>Edgar Kussberg</Name>
-              <Title>Senior Expert</Title>
+              <Title>Senior Technology Expert</Title>
               {/*  <Do>Technology</Do> */}
               <Linke>
                 <a href="https://www.linkedin.com/in/kussberg/">
